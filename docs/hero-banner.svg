@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420" role="img" aria-label="job-hunt — AI job search command center">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b27"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58a6ff"/>
+      <stop offset="1" stop-color="#3fb950"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="420" fill="url(#bg)"/>
+  <rect x="0" y="414" width="1600" height="6" fill="url(#accent)"/>
+
+  <!-- Left: wordmark -->
+  <g font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace">
+    <text x="110" y="178" font-size="64" font-weight="700" fill="#e6edf3">job-hunt</text>
+    <text x="110" y="232" font-size="26" fill="#8b949e">AI job-search command center</text>
+    <text x="110" y="286" font-size="20" fill="#58a6ff">evaluate · tailor · track · interview · negotiate</text>
+  </g>
+
+  <!-- Right: terminal window -->
+  <g>
+    <rect x="820" y="62" width="670" height="296" rx="14" fill="#0a0d13" stroke="#30363d" stroke-width="1.5"/>
+    <rect x="820" y="62" width="670" height="42" rx="14" fill="#161b22"/>
+    <rect x="820" y="90" width="670" height="14" fill="#161b22"/>
+    <circle cx="852" cy="83" r="7" fill="#ff5f57"/>
+    <circle cx="876" cy="83" r="7" fill="#febc2e"/>
+    <circle cx="900" cy="83" r="7" fill="#28c840"/>
+    <text x="1155" y="89" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="15" fill="#8b949e" text-anchor="middle">claude — job-hunt</text>
+
+    <g font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace" font-size="17">
+      <text x="852" y="142" fill="#3fb950">&gt;</text>
+      <text x="874" y="142" fill="#e6edf3">/job-hunt scan</text>
+      <text x="852" y="176" fill="#8b949e">✓ 12 new roles across 45 portals</text>
+
+      <text x="852" y="216" fill="#3fb950">&gt;</text>
+      <text x="874" y="216" fill="#e6edf3">/job-hunt evaluate</text>
+      <text x="852" y="250" fill="#8b949e">✓ score 4.6/5 — strong fit, apply</text>
+
+      <text x="852" y="290" fill="#3fb950">&gt;</text>
+      <text x="874" y="290" fill="#e6edf3">/job-hunt pdf</text>
+      <text x="852" y="324" fill="#8b949e">✓ tailored CV → output/cv.pdf</text>
+    </g>
+  </g>
+</svg>

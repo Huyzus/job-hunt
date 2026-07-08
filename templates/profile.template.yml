@@ -1,0 +1,76 @@
+# Job-Hunt Profile Configuration
+# Generated from data/canonical.yml — edit canonical.yml, then run gen-derived.mjs.
+# This is the single source of truth for personal data across all modes.
+# Replace the {Placeholder} values and {{ token }} paths with your own —
+# token paths must match your data/canonical.yml structure.
+
+candidate:
+  full_name: "{{ identity.full_name }}"
+  email: "{{ identity.email }}"
+  phone: ""
+  location: "{{ identity.location }}"
+  linkedin: "{{ identity.linkedin }}"
+  portfolio_url: "{{ identity.portfolio_url }}"
+  github: ""
+  twitter: ""
+  visa_status: "{{ identity.visa_status }}"
+
+target_roles:
+  primary:
+    - "{Primary role title}"
+    - "{Secondary role title}"
+  archetypes:
+    - name: "{Primary role title}"
+      level: "{Level}"
+      fit: "primary"
+    - name: "{Secondary role title}"
+      level: "{Level}"
+      fit: "secondary"
+    - name: "{Adjacent role title}"
+      level: "{Level}"
+      fit: "adjacent"
+
+narrative:
+  headline: "{One-line positioning headline}"
+  exit_story: |
+    {{ narrative:exit_story }}
+  pillars:
+    - "{Pillar one — a strength stated in one sentence}"
+    - "{Pillar two}"
+    - "{Pillar three}"
+  proof_points:
+    - name: "{Hero project name}"
+      url: "{{ identity.portfolio_url }}"
+      hero_metric: "{{ projects.hero_project.metrics.headline }}"
+    - name: "{Side project one}"
+      url: "{{ projects.side_project_one.live_url }}"
+      hero_metric: "{{ projects.side_project_one.metrics.headline }}"
+    - name: "{Side project two}"
+      url: "{{ projects.side_project_two.live_url }}"
+      hero_metric: "{{ projects.side_project_two.metrics.headline }}"
+
+compensation:
+  target_range: "{{ compensation.target_range }}"
+  currency: "{{ compensation.currency }}"
+  minimum: "{{ compensation.walk_away }}"
+  aspirational_anchor: "{{ compensation.aspirational_anchor }}"
+  location_flexibility: "{{ location.preferred }}"
+
+location:
+  country: "{Country}"
+  city: "{City}"
+  timezone: "{Timezone}"
+  visa_status: "{{ identity.visa_status }}"
+  hard_gate: "{{ location.hard_gate }}"
+
+# === Phase 2: Weakness Pattern Analyzer ===
+# Controls auto-trigger of the weaknesses card after debriefs.
+# Uncomment to override defaults.
+#
+# weaknesses:
+#   auto_trigger: true                       # set false to suppress card on debrief
+#   min_debriefs_for_patterns: 3             # below this, no patterns surfaced
+#   high_confidence_min_occurrences: 3       # >= 3 occurrences for High tier
+#   high_confidence_max_age_days: 60         # AND <=60 days old
+#   medium_confidence_min_occurrences: 2     # >= 2 occurrences for Medium tier
+#   medium_confidence_max_age_days: 90       # AND <=90 days old

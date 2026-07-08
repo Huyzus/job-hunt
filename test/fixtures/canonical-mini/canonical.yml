@@ -1,0 +1,6 @@
+identity:
+  full_name: "Alex Chen"
+  email: "alex.chen@example.com"
+projects:
+  example:
+    metric: "30,000+ users"

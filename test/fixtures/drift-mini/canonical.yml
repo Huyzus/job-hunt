@@ -1,0 +1,5 @@
+projects:
+  example_app:
+    live_url: "https://exampleapp.live"
+identity:
+  full_name: "Test User"

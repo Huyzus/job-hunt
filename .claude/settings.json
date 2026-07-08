@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "prompt=$(jq -r '.prompt // \"\"'); echo \"$prompt\" | grep -qiE '\\b(apply|applying|application)\\b' && jq -nc '{hookSpecificOutput:{hookEventName:\"UserPromptSubmit\",additionalContext:\"Before recommending or generating any apply packet, dedupe by company across ALL statuses in data/applications.md — run grep -i {company} data/applications.md and check for prior Applied/Rejected/Discarded rows. A prior Applied row means in-flight, do not re-apply.\"}}' || true",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

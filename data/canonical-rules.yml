@@ -1,0 +1,15 @@
+# Drift rules — drift-alert.mjs loads these.
+# Schema:
+#   id, memory (path to feedback file), description,
+#   pattern_violation (regex), canonical_field (yaml path),
+#   suggest, advisory (bool, default false)
+#
+# Add one row per rule as you accumulate corrections during your job search.
+# Example:
+#   - id: award_year_correct
+#     description: "My design award year is 2024 (not 2023)"
+#     canonical_field: awards.0.year
+#     pattern_violation: 'Design Award\s*2023'
+#     suggest: "use {canonical_field}"
+
+rules: []

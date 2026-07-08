@@ -1,0 +1,4 @@
+description = "Analyze patterns from interview debriefs (prescription card by default, --full for evidence)"
+prompt = """
+Load the router at `.claude/skills/job-hunt/SKILL.md`. Then execute the workflow in `modes/weaknesses.md`. Honor `--full` and `--evidence N` flags from user input.
+"""

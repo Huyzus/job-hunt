@@ -1,0 +1,7 @@
+rules:
+  - id: live_url_vibe
+    canonical_field: projects.example_app.live_url
+    pattern_violation: 'oldportfolio\.example/work/example-app'
+    suggest: "use {canonical_field}"
+  - id: ban_old_name
+    pattern_violation: 'Old Project Name'
