@@ -67,7 +67,7 @@ Job-hunt is agentic: Claude Code navigates career pages with Playwright, evaluat
 
 > **Heads up: the first evaluations won't be great.** The system doesn't know you yet. Feed it context -- your CV, your career story, your proof points, your preferences, what you're good at, what you want to avoid. The more you nurture it, the better it gets. Think of it as onboarding a new recruiter: the first week they need to learn about you, then they become invaluable.
 
-Built by someone who used it to evaluate 740+ job offers, generate 100+ tailored CVs, and land a Head of Applied AI role. [Read the full case study](https://santifer.io/career-ops-system).
+Original author post [Read the full case study](https://santifer.io/career-ops-system).
 
 ## Features
 
